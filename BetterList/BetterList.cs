@@ -121,6 +121,7 @@ namespace BetterList
         /// <returns>
         /// A betterlist sublist. 
         /// </returns>
+        [Obsolete("Note Tested")]
         public BetterList<T> this[Func<T, bool> condition]
         {
             get
@@ -133,8 +134,36 @@ namespace BetterList
                     
                 return new BetterList<T>(newlist); 
             }
-
         }
+
+
+
+        /// <summary>
+        /// 
+        /// This method takes in a delegate that takes in int and return boolean, 
+        /// The ints are index in this case, hence it select certain element in an index 
+        /// that satifies a certain condition. 
+        /// </summary>
+        /// <param name="indexcondition">
+        /// A func that takes in int and return bool 
+        /// </param>
+        /// <returns></returns>
+        public BetterList<T> this[Func<int, bool> indexcondition]
+        {
+            get
+            {
+                IList<T> newlist = new List<T>();
+                for (int i = 0; i < _TheList.Count; i++)
+                {
+                    if (indexcondition(i)) newlist.Add(this[i]);
+                }
+
+                return new BetterList<T>(newlist);
+
+            }
+        }
+
+
 
 
 
