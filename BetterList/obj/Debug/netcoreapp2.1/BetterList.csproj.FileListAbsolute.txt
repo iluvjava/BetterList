@@ -1,0 +1,11 @@
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\bin\Debug\netcoreapp2.1\BetterList.deps.json
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\bin\Debug\netcoreapp2.1\BetterList.runtimeconfig.json
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\bin\Debug\netcoreapp2.1\BetterList.runtimeconfig.dev.json
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\bin\Debug\netcoreapp2.1\BetterList.dll
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\bin\Debug\netcoreapp2.1\BetterList.pdb
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\obj\Debug\netcoreapp2.1\BetterList.csprojAssemblyReference.cache
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\obj\Debug\netcoreapp2.1\BetterList.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\obj\Debug\netcoreapp2.1\BetterList.AssemblyInfoInputs.cache
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\obj\Debug\netcoreapp2.1\BetterList.AssemblyInfo.cs
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\obj\Debug\netcoreapp2.1\BetterList.dll
+C:\Users\Administrator\OneDrive - UW\My CSharp Project\BetterList\BetterList\BetterList\obj\Debug\netcoreapp2.1\BetterList.pdb
