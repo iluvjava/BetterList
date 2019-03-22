@@ -93,8 +93,8 @@ namespace BetterList
 
                 //Make the second index positive
 
-                if (end < 0) end = len-1 + end;
-                if (start < 0) start = len - 1 + start;
+                if (end < 0) end = len + end;
+                if (start < 0) start = len + start;
 
                 if (start<0 ||end < 0 || start > end) throw new ArgumentException();
 
@@ -143,11 +143,16 @@ namespace BetterList
         /// This method takes in a delegate that takes in int and return boolean, 
         /// The ints are index in this case, hence it select certain element in an index 
         /// that satifies a certain condition. 
+        /// <para>
+        /// This will be overrided if the func is a int->bool, it overrides the generic 
+        /// func above. 
+        /// </para>
         /// </summary>
         /// <param name="indexcondition">
         /// A func that takes in int and return bool 
         /// </param>
         /// <returns></returns>
+        [Obsolete("Not Tested")]
         public BetterList<T> this[Func<int, bool> indexcondition]
         {
             get
@@ -191,7 +196,7 @@ namespace BetterList
             if (Math.Abs(i) >= _TheList.Count) throw new IndexOutOfRangeException("Index: "+ i);
 
             // Counter from tail to head if the index is negative: 
-            if (i < 0) i = _TheList.Count-1 + i;
+            if (i < 0) i = _TheList.Count + i;
             return _TheList[i];
 
         }
@@ -211,7 +216,7 @@ namespace BetterList
                 throw new IndexOutOfRangeException("Index: " + i);
 
             //Swtich the sign
-            if (i < 0) i = _TheList.Count-1 + i;
+            if (i < 0) i = _TheList.Count + i;
 
             //Pad it if the i is larger than the length.
             int len = _TheList.Count;
